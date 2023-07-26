@@ -1,27 +1,4 @@
 @import "../styles.scss";
-@mixin group {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-@mixin button($color, $alpha) {
-    p{
-        text-align: center
-    }
-    flex-shrink: 0;
-   
-    color: $color;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    
-    border-radius: 35px;
-    background-color: rgba($color: $color, $alpha: $alpha)
-  }
 
 .main {
     color: $white;
