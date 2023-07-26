@@ -105,16 +105,17 @@
         margin-top: 1px;
         color:  $light-lavender;
     }
+    .value{
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: $white;
+        padding: 0;
+        margin: 0px;
+    }
 }
-.value{
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    color: $white;
-    padding: 0;
-    margin: 0px;
-}
+
 
 .group-reaction {
     @include group;
