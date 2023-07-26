@@ -1,4 +1,4 @@
-@import "../styles.scss";
+@import "../config.scss";
 @mixin group {
     display: flex;
     flex-direction: row;
@@ -32,168 +32,110 @@
     justify-content: center;
     margin-bottom: 60px;
     padding-top: 13em;
-    
-
-    .left-side{
-        width: 404px;
-        height: 566px;
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 73px;
-        background: linear-gradient(180deg, $light-slate-blue 0%, $light-royal-blue 100%);
-        h1{
-            flex-shrink: 0;
-            color: $light-lavender;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-        .percentage{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            width: 250px;
-            height: 250px;
-            border-radius: 170px;
-            margin-bottom: 10px;
-            background: radial-gradient(50% 50.00% at 50% 50.00%, $persian-blue 0%, $violet-blue 100%);
-            .value{
-                font-size: 100px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                color: $white;
-                padding: 0;
-                margin: 0px;
-            }
-            h3{
-                margin-top: 1px;
-                color:  $light-lavender;
-            }
-        }
-
-        .smal-description{
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 10px;
-            h1{
-                color:$white;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                color: $white;
-                padding: 0;
-                margin: 0px; 
-            }
-            .description{
-                color: $light-lavender;
-                text-align: center;
-                font-weight: 400;
-                font-size: 18px;
-                padding-right: 75px;
-                padding-left: 61px;
-
-            }
-        }
-    }
-    .right-side{
-        width: 404px;
-        height: 566px;
-        box-shadow: 20px 0px 4px rgba(0, 0, 0, 0.20);
-        border-top-right-radius: 94px;
-        border-bottom-right-radius: 94px;
-        background-color: $white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $dark-gray-blue;
-        .title{
-            font-size: 24px;
-            font-weight: 700;
-            padding-bottom: 20px;
-            padding-top: 10px;
-            margin-left: 40px;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-        .table{
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            ul{
-                list-style: none;
-                padding-left: 0;
-            }
-            li{
-                
-                border-radius: 94px;
-                padding: 10px 30px ;
-                width: 313px;
-                height: 57px;
-                flex-shrink: 0;
-                .value-visual, .value-memory, .value-reaction, .value-verbal{
-                    color: $light-lavender;
-                }
-                #value_bold{
-                    font-size: 20px;
-                    font-weight: 700;
-                    color: $dark-gray-blue;
-                }
-                .group-reaction {
-                    @include group;
-                    @include button($light-red, $alpha);
-                    
-                }
-                .group-memory{
-                    @include group();
-                    @include button($orangey-yellow, $alpha);
-                   
-                }
-               .group-visual{
-                    @include group();
-                    @include button($green-teal, $alpha);
-                    
-               }
-               .group-verbal{
-                    @include group();
-                    @include button($cobalt-blue, $alpha);
-                    
-               }
-            }
-            
-            
-        }
-        .send{
-            margin-left: 40px;
-            border-radius: 35px;
-            color: $white;
-            background-color: $dark-gray-blue;
-            width: 313px;
-            height: 57px;
-            flex-shrink: 0;
-            border: none;
-            
-        }
-        .send:active, .send:hover{
-            background-color: $light-slate-blue;
-        }
-    }
+  
+   
 
 }
 
+.left-side{
+    width: 404px;
+    height: 566px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 73px;
+    background: linear-gradient(180deg, $light-slate-blue 0%, $light-royal-blue 100%);
+    h1{
+        flex-shrink: 0;
+        color: $light-lavender;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 
 
+}
 
+.smal-description{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    h1{
+        color:$white;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: $white;
+        padding: 0;
+        margin: 0px; 
+    }
+   
+
+}
+
+.description{
+    color: $light-lavender;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    padding-right: 75px;
+    padding-left: 61px;
+
+}
+
+.percentage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 170px;
+    margin-bottom: 10px;
+    background: radial-gradient(50% 50.00% at 50% 50.00%, $persian-blue 0%, $violet-blue 100%);
+   
+    h3{
+        margin-top: 1px;
+        color:  $light-lavender;
+    }
+}
+.value{
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $white;
+    padding: 0;
+    margin: 0px;
+}
+
+.group-reaction {
+    @include group;
+    @include button($light-red, $alpha);
+    
+}
+.group-memory{
+    @include group();
+    @include button($orangey-yellow, $alpha);
+   
+}
+.group-visual{
+    @include group();
+    @include button($green-teal, $alpha);
+    
+}
+.group-verbal{
+    @include group();
+    @include button($cobalt-blue, $alpha);
+    
+}
 
 @media (width <= 400px) {
     .main{
