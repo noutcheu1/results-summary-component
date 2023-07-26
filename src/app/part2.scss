@@ -1,15 +1,6 @@
  @mixin right{
 .right-side{
-        width: 404px;
-        height: 566px;
-        box-shadow: 20px 0px 4px rgba(0, 0, 0, 0.20);
-        border-top-right-radius: 94px;
-        border-bottom-right-radius: 94px;
-        background-color: $white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $dark-gray-blue;
+      
         .title{
             font-size: 24px;
             font-weight: 700;
