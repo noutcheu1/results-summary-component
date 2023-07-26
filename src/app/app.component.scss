@@ -15,7 +15,7 @@
         flex-direction: column;
         justify-content: center;
         color: $dark-gray-blue;
-        @include left();
+        @include right;
         .send{
             margin-left: 40px;
             border-radius: 35px;
@@ -32,7 +32,7 @@
         }
     }
   .left-side{
-     width: 404px;
+           width: 404px;
             height: 566px;
             flex-shrink: 0;
             display: flex;
@@ -41,6 +41,8 @@
             flex-direction: column;
             border-radius: 73px;
             background: linear-gradient(180deg, $light-slate-blue 0%, $light-royal-blue 100%);
+        @include left;
+    
   }
 
 }
