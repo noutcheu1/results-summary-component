@@ -141,22 +141,27 @@
                 width: 313px;
                 height: 57px;
                 flex-shrink: 0;
-                
+                .value-visual, .value-memory, .value-reaction, .value-verbal{
+                    color: $light-lavender;
+                }
+                #value_bold{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $dark-gray-blue;
+                }
                 .group-reaction {
                     @include group;
                     @include button($light-red, $alpha);
-                     
+                    
                 }
                 .group-memory{
                     @include group();
                     @include button($orangey-yellow, $alpha);
-                    
+                   
                 }
                .group-visual{
                     @include group();
-                    
-                        @include button($green-teal, $alpha);
-                    
+                    @include button($green-teal, $alpha);
                     
                }
                .group-verbal{
@@ -185,6 +190,7 @@
     }
 
 }
+
 
 
 
