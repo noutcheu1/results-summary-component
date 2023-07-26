@@ -1,4 +1,5 @@
- .right-side{
+ @mixin right{
+.right-side{
         width: 404px;
         height: 566px;
         box-shadow: 20px 0px 4px rgba(0, 0, 0, 0.20);
@@ -63,6 +64,7 @@
                     
                }
             }
+  }
             
             
         }
