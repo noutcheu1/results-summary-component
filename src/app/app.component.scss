@@ -15,7 +15,21 @@
         flex-direction: column;
         justify-content: center;
         color: $dark-gray-blue;
-        
+        @include left();
+        .send{
+            margin-left: 40px;
+            border-radius: 35px;
+            color: $white;
+            background-color: $dark-gray-blue;
+            width: 313px;
+            height: 57px;
+            flex-shrink: 0;
+            border: none;
+            
+        }
+        .send:active, .send:hover{
+            background-color: $light-slate-blue;
+        }
     }
   .left-side{
      width: 404px;
