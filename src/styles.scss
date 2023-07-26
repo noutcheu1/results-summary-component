@@ -1,75 +1,4 @@
-
-$light-red: hsl(0, 100%, 67%);
-$orangey-yellow: hsl(39, 100%, 56%);
-$green-teal: hsl(166, 100%, 37%);
-$cobalt-blue: hsl(234, 85%, 45%);
-$alpha:  0.10;
-$light-slate-blue: hsl(252, 100%, 67%);
-$light-royal-blue: hsl(241, 81%, 54%);
-$violet-blue: hsla(256, 72%, 46%, 1);
-$persian-blue: hsla(241, 72%, 46%, 0);
-
-$white: hsl(0, 0%, 100%);
-$pale-blue: hsl(221, 100%, 96%);
-$light-lavender: hsl(241, 100%, 89%);
-$dark-gray-blue: hsl(224, 30%, 27%);
-.table{
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            ul{
-                list-style: none;
-                padding-left: 0;
-            }
-            li{
-                
-                border-radius: 94px;
-                padding: 10px 30px ;
-                width: 313px;
-                height: 57px;
-                flex-shrink: 0;
-                .value-visual, .value-memory, .value-reaction, .value-verbal{
-                    color: $light-lavender;
-                }
-                #value_bold{
-                    font-size: 20px;
-                    font-weight: 700;
-                    color: $dark-gray-blue;
-                }
-                .group-reaction {
-                    @include group;
-                    @include button($light-red, $alpha);
-                    
-                }
-                .group-memory{
-                    @include group();
-                    @include button($orangey-yellow, $alpha);
-                   
-                }
-               .group-visual{
-                    @include group();
-                    @include button($green-teal, $alpha);
-                    
-               }
-               .group-verbal{
-                    @include group();
-                    @include button($cobalt-blue, $alpha);
-                    
-               }
-            }
-  }
-
-.main{
-  color: $white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 60px;
-    padding-top: 13em;
-}
+@import "./config.scss";
 
 /* You can add global styles to this file, and also import other style files */
 body{
@@ -82,35 +11,75 @@ body{
     font-weight: 400;
    
 }
-@mixin group {
+
+.right-side{
+    width: 404px;
+    height: 566px;
+    box-shadow: 20px 0px 4px rgba(0, 0, 0, 0.20);
+    border-top-right-radius: 94px;
+    border-bottom-right-radius: 94px;
+    background-color: $white;
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-@mixin button($color, $alpha) {
-    p{
-        text-align: center
-    }
-    flex-shrink: 0;
-   
-    color: $color;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    color: $dark-gray-blue;
     
+}
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.send{
+    margin-left: 40px;
     border-radius: 35px;
-    background-color: rgba($color: $color, $alpha: $alpha)
-  }
-@media (width <= 400px) {
-    .main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }    
+    color: $white;
+    background-color: $dark-gray-blue;
+    width: 313px;
+    height: 57px;
+    flex-shrink: 0;
+    border: none;
+    
+}
+.send:active, .send:hover{
+    background-color: $light-slate-blue;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.table{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   
+    
+    
+    
+}
+
+li{
+        
+    border-radius: 94px;
+    padding: 10px 30px ;
+    width: 313px;
+    height: 57px;
+    flex-shrink: 0;
+    .value-visual, .value-memory, .value-reaction, .value-verbal{
+        color: $light-lavender;
+    }
+    #value_bold{
+        font-size: 20px;
+        font-weight: 700;
+        color: $dark-gray-blue;
+    }
+   
 }
