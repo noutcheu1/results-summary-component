@@ -1,1 +1,81 @@
+ color: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    padding-top: 13em;
+    
 
+    .left-side{
+        width: 404px;
+        height: 566px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 73px;
+        background: linear-gradient(180deg, $light-slate-blue 0%, $light-royal-blue 100%);
+        h1{
+            flex-shrink: 0;
+            color: $light-lavender;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .percentage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 250px;
+            height: 250px;
+            border-radius: 170px;
+            margin-bottom: 10px;
+            background: radial-gradient(50% 50.00% at 50% 50.00%, $persian-blue 0%, $violet-blue 100%);
+            .value{
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: $white;
+                padding: 0;
+                margin: 0px;
+            }
+            h3{
+                margin-top: 1px;
+                color:  $light-lavender;
+            }
+        }
+
+        .smal-description{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            h1{
+                color:$white;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: $white;
+                padding: 0;
+                margin: 0px; 
+            }
+            .description{
+                color: $light-lavender;
+                text-align: center;
+                font-weight: 400;
+                font-size: 18px;
+                padding-right: 75px;
+                padding-left: 61px;
+
+            }
+        }
+    }
