@@ -13,6 +13,52 @@ $white: hsl(0, 0%, 100%);
 $pale-blue: hsl(221, 100%, 96%);
 $light-lavender: hsl(241, 100%, 89%);
 $dark-gray-blue: hsl(224, 30%, 27%);
+.table{
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            ul{
+                list-style: none;
+                padding-left: 0;
+            }
+            li{
+                
+                border-radius: 94px;
+                padding: 10px 30px ;
+                width: 313px;
+                height: 57px;
+                flex-shrink: 0;
+                .value-visual, .value-memory, .value-reaction, .value-verbal{
+                    color: $light-lavender;
+                }
+                #value_bold{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $dark-gray-blue;
+                }
+                .group-reaction {
+                    @include group;
+                    @include button($light-red, $alpha);
+                    
+                }
+                .group-memory{
+                    @include group();
+                    @include button($orangey-yellow, $alpha);
+                   
+                }
+               .group-visual{
+                    @include group();
+                    @include button($green-teal, $alpha);
+                    
+               }
+               .group-verbal{
+                    @include group();
+                    @include button($cobalt-blue, $alpha);
+                    
+               }
+            }
+  }
 
 .main{
   color: $white;
