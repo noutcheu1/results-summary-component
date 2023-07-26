@@ -19,25 +19,25 @@
         <li>
          <div class="group-reaction">
           <div class="reaction"><p><fa-icon [icon]="reaction"></fa-icon> reaction</p></div>
-          <div class="value-reaction">0/100</div>
+          <div class="value-reaction"><span id="value_bold">{{reaction_value}}</span> /100</div>
          </div>
         </li>
         <li>
           <div class="group-memory">
             <div class="Memory"><p><fa-icon [icon]="memory"></fa-icon> Memory</p></div>
-            <div class="value-memory">0/100</div>
+            <div class="value-memory"><span id="value_bold">{{memory_value}}</span> /100</div>
           </div>
         </li>
         <li>
           <div class="group-verbal">
             <div class="Verbal"><p><fa-icon [icon]="verbal"></fa-icon> Verbal</p></div>
-            <div class="value-verbal">0/100</div>
+            <div class="value-verbal"><span id="value_bold">{{verbal_value}}</span> /100</div>
           </div>
         </li>
         <li>
           <div class="group-visual">
             <div class="Visual"><p><fa-icon [icon]="visual"></fa-icon> Visual</p></div>
-            <div class="value-visual">0/100</div>
+            <div class="value-visual"><span id="value_bold">{{visual_value}}</span> /100</div>
           </div>
         </li>
       </ul>
